@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+        <link rel="icon" href="./img/icon.png">
+        <title>Minecraft Puzzle</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/minecraft.png" alt="logo">
+        </header>
+            <h1>Klik Start dan Arahkan Mouse untuk Bermain!</h1>
+            <p>Move</p>
+            <p id="score">0</p>
+        <section>
+        <div id="canvas"><div id="table" style="display: table;">
+            <div id="row1" style="display: table-row;">
+               <div id="cell11" class="kotak1" onClick="pilihKotak(1,1);"></div>
+               <div id="cell12" class="kotak2" onClick="pilihKotak(1,2);"></div>
+               <div id="cell13" class="kotak3" onClick="pilihKotak(1,3);"></div>
+            </div>
+            <div id="row2" style="display: table-row;">
+               <div id="cell21" class="kotak4" onClick="pilihKotak(2,1);"></div>
+               <div id="cell22" class="kotak5" onClick="pilihKotak(2,2);"></div>
+               <div id="cell23" class="kotak6" onClick="pilihKotak(2,3);"></div>
+            </div>
+            <div id="row3" style="display: table-row;">
+               <div id="cell31" class="kotak7" onClick="pilihKotak(3,1);"></div>
+               <div id="cell32" class="kotak8" onClick="pilihKotak(3,2);"></div>
+               <div id="cell33" class="kotak9" onClick="pilihKotak(3,3);"></div>
+            </div>
+            <button onClick="acakKotak();">Start</button>
+        </div>
+        </section>
+    </body>
+    <script src="script.js"></script>
+</html>
